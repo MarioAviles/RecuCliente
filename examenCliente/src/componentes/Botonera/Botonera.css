@@ -1,0 +1,12 @@
+.botonera{
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    button{
+        background-color: green;
+        color: orange;
+        border: 1px solid black;
+    }
+}
