@@ -1,0 +1,37 @@
+.datos-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.recetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 20px;
+    padding: 20px;
+    margin-left: 35px;
+}
+
+.receta {
+    width: 200px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.receta:hover {
+    transform: scale(1.05);
+}
+
+.receta-img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.receta-categoria {
+    font-size: 14px;
+    font-weight: bold;
+}

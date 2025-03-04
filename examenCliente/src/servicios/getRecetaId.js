@@ -1,5 +1,5 @@
-export function getRecetas(letra = "a") {
-    const Url = `https://www.themealdb.com/api/json/v1/1/search.php?f=${letra}`
+export function getRecetaId(id) {
+    const Url = `https://www.themealdb.com/api/json/v1/1/search.php?i=${id}`
   
     return fetch(Url, {
       method: "GET"
@@ -7,12 +7,10 @@ export function getRecetas(letra = "a") {
       .then(response => response.json())
       .then(data => {
 
-        if (!data.meals) return "No hay recetas con esa letra"
-        
         return data.meals.map(receta => ({
           nombre: receta.strMeal,
           categoria: receta.strCategory,
-          foto: receta.strMealThumb,
+          area: receta.strArea,
           id: receta.idMeal
         }));
       })
