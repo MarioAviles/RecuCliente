@@ -1,5 +1,6 @@
 import {Routes, Route} from 'react-router-dom'
 import Cabecera from './componentes/Cabecera/Cabecera'
+import Detalle from './paginas/Detalle/Detalle'
 import Home from './paginas/Home/Home'
 import LazyLoad from 'react-lazy-load'
 import { Suspense } from 'react';
@@ -17,7 +18,7 @@ function App() {
 
         <Route path="/" element={<div><Home></Home>
           </div>}></Route>
-        {/* <Route path="/comida/:id" element={<Detalles></Detalles>}></Route> */}
+        <Route path="/juego/:id" element={<Detalle></Detalle>}></Route>
 
       </Routes>
 

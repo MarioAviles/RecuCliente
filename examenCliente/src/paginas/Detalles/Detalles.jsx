@@ -6,7 +6,7 @@ const Detalles = () => {
     const {buscando, recetas} = useRecetaId(id);
 
     if (!recetas || recetas.length === 0) {
-        return "pene gordo"
+        return "no hay resultados"
     }
 
     return (
