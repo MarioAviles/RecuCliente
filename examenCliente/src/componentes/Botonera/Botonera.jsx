@@ -6,7 +6,7 @@ const Botonera = (props) => {
     return (
         <div className='botonera'>
             {letras.map((letra) => (
-                <button key={letra} onClick={() => props.obtenerRecetas(letra)}>
+                <button className="boton" key={letra} onClick={() => props.obtenerRecetas(letra)}>
                     {letra}
                 </button>
             ))}
