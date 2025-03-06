@@ -5,6 +5,7 @@ import useRecetas from './hooks/useRecetaId';
 import { Routes, Route } from 'react-router-dom';
 import LazyLoad from 'react-lazy-load'
 import { Suspense } from 'react';
+import ScrollUpDown from './componentes/ScrollUpDown/ScrollUpDown';
 import React from 'react';
 // import Pie from './componentes/Pie/Pie';
 
@@ -29,6 +30,7 @@ function App() {
           <Pie></Pie>
         </LazyLoad>
       </Suspense>
+      <ScrollUpDown />
     </>
   )
 }

@@ -35,3 +35,11 @@
     font-size: 14px;
     font-weight: bold;
 }
+
+.like-icon {
+    top: 450px;
+    right: 10px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 35px;
+}

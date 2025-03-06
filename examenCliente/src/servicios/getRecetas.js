@@ -7,7 +7,7 @@ export function getRecetas(letra = "a") {
       .then(response => response.json())
       .then(data => {
 
-        if (!data.meals) return "No hay recetas con esa letra"
+        if (!data.meals || data.meals.length === 0 || letra === 'Ñ') return []
         
         return data.meals.map(receta => ({
           nombre: receta.strMeal,
