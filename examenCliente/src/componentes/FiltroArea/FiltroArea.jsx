@@ -5,7 +5,6 @@ import { useState } from "react";
 const FiltroArea = (props) => {
 
     const {recetas} = useArea();
-    const [areaElegida, setAreaElegida] =  useState("Todas");
 
     function recorrerAreas(receta) {
         return <option key={receta.area} value={receta.area}>{receta.area}</option>
@@ -14,7 +13,6 @@ const FiltroArea = (props) => {
     function asignarArea(event){
 
         props.manejarAreaSeleccionada(event.target.value);
-        setAreaElegida(event.target.value);
     }
 
     
@@ -22,7 +20,7 @@ const FiltroArea = (props) => {
     return (
         <div className="filtroArea">
             <label>Areas</label>
-            <select value={areaElegida} onChange={asignarArea}>
+            <select value={recetas.area} onChange={asignarArea}>
                 <option value= "Todas">
                     Selecciona un área
                 </option>
