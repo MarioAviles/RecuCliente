@@ -1,5 +1,6 @@
-.cabecera{
+.pie{
     background-color: rgb(116, 116, 116);
+    margin-top: 5px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -7,7 +8,4 @@
     padding: 15px;
     text-decoration: none;
     color: white;
-    img{
-        width: 100px;
-    }
 }

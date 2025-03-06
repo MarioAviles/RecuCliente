@@ -1,12 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 import {Routes, Route} from 'react-router-dom'
-import Cabecera from './componentes/Cabecera'
+import Cabecera from './componentes/Cabecera/Cabecera'
+import Home from './paginas/Home/Home'
+import Pie from './componentes/Pie/Pie'
+import LazyLoad from 'react-lazy-load'
+import { Suspense } from 'react';
+import React from 'react'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const Pie = React.lazy ( () => import('./componentes/Pie/Pie'))
 
   return (
     <>
@@ -19,12 +21,12 @@ function App() {
 
       </Routes>
 
-      {/* <Suspense fallback={"Cargando pie de pagina"}> */}
-        {/* <LazyLoad offset={250}> */}
+      <Suspense fallback={"Cargando pie de pagina"}>
+        <LazyLoad offset={250}>
           <Pie></Pie>
-        {/* </LazyLoad> */}
-      {/* </Suspense> */}
-      <ScrollUpDown />
+        </LazyLoad>
+      </Suspense>
+      {/* <ScrollUpDown /> */}
     </>
   )
 }
