@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { getRecetas } from "../servicios/getRecetas";
-import { getRecetaId } from "../servicios/getRecetaId";
 
 const useRecetas = () => {
     const [recetas, setRecetas] = useState([]);
@@ -16,6 +15,7 @@ const useRecetas = () => {
             setBuscando(false);
         });
     }
+
 
     useEffect(() => { obtenerRecetas(letra);
     }, [letra]); // Se ejecuta cuando cambia la letra para poder volver a obtener las recetas

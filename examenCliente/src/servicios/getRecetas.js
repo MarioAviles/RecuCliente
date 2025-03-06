@@ -12,6 +12,7 @@ export function getRecetas(letra = "a") {
         return data.meals.map(receta => ({
           nombre: receta.strMeal,
           categoria: receta.strCategory,
+          area: receta.strArea,
           foto: receta.strMealThumb,
           id: receta.idMeal
         }));

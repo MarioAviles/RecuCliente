@@ -3,6 +3,11 @@ import letras from '../../mocks/mock-botonera';
 import './Botonera.css';
 
 const Botonera = (props) => {
+
+    function obtenerPorArea(recetas) {
+        return 
+    }
+
     return (
         <div className='botonera'>
             {letras.map((letra) => (
