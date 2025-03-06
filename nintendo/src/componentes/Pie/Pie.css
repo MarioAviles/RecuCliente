@@ -1,5 +1,6 @@
 .pie{
     background-color: rgb(116, 116, 116);
+    float: right;
     margin-top: 5px;
     width: 100%;
     display: flex;
