@@ -9,7 +9,7 @@ const Filtros = (props) => {
     return(
         <div className='filtros'>
             <FiltroCategoria juegos={props.juegos}setCategoriaSeleccionada={props.setCategoriaSeleccionada}/>
-            <FiltroOrden juegos={props.juegos}setOrdenFecha={props.setOrdenFecha}/>
+            <FiltroOrden setOrdenFecha={props.setOrdenFecha}/>
             <h2>Disfruta del gaming!</h2>
             <img src={foto} alt="" />
         </div>
