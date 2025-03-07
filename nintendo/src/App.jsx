@@ -1,6 +1,7 @@
 import {Routes, Route} from 'react-router-dom'
 import Cabecera from './componentes/Cabecera/Cabecera'
 import Detalle from './paginas/Detalle/Detalle'
+import ScrollUpDown from './componentes/ScrollUpDown/ScrollUpDown'
 import Home from './paginas/Home/Home'
 import LazyLoad from 'react-lazy-load'
 import { Suspense } from 'react';
@@ -27,7 +28,7 @@ function App() {
           <Pie></Pie>
         </LazyLoad>
       </Suspense>
-      {/* <ScrollUpDown /> */}
+      <ScrollUpDown />
     </>
   )
 }

@@ -1,4 +1,4 @@
-.filtroCategoria {
+.filtroOrden {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,11 +8,11 @@
     margin: 10px 0;
 }
 
-.filtroCategoria label {
+.filtroOrden label {
     font-weight: bold;
 }
 
-.filtroCategoria select {
+.filtroOrden select {
     padding: 5px;
     border-radius: 5px;
 }

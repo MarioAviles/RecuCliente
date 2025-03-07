@@ -12,6 +12,7 @@ const FiltroCategoria = (props) => {
     return (
         
         <div className="filtroCategoria">
+            <label>Categoría</label>
             <select onChange={(e) => props.setCategoriaSeleccionada(e.target.value)}>
                 <option value="">Todas</option>
                 {categorias.map((categoria, index) => (
