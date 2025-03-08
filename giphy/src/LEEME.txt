@@ -1,0 +1,5 @@
+Hay que instalar desde el Terminal el paquete wouter en nuestro proyecto
+
+npm install wouter
+
+Añadir al fichero settings.js de la carpeta SERVICIOS el APIkey que os proporciona la web Giphy

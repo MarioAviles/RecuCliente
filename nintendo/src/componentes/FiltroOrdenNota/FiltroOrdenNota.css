@@ -1,0 +1,18 @@
+.filtroOrdenNota {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.filtroOrdenNota label {
+    font-weight: bold;
+}
+
+.filtroOrdenNota select {
+    padding: 5px;
+    border-radius: 5px;
+}

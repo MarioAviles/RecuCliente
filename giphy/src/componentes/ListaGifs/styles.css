@@ -1,0 +1,8 @@
+
+  .ListaGifs {
+    column-count: 4;
+    column-gap: 5px;
+    background-color: black;    
+  }
+
+  .alturaListaGifs{min-height: 100vh;}
