@@ -1,9 +1,17 @@
+import './Buscador.css'
 
-
-const Buscador = () => {
+const Buscador = (props) => {
     return (
-        <div>
-
+        <div className='buscador'>
+            <input
+                type="text"
+                placeholder="Buscar juego..."
+                value={props.skeyword}
+                onChange={(e) => props.setKeyword(e.target.value)}
+            />
+            <button onClick={props.aplicarBusqueda}>Buscar</button>
         </div>
+
     )
 }
+export default Buscador;

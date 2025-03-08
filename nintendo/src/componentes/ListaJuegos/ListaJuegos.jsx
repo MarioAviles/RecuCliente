@@ -17,7 +17,7 @@ const ListaJuegos = (props) => {
                 {props.juegos.length > 0 ? (
                     props.juegos.map((juegos) => (
                         <div key={juegos.id} className="juego" onClick={() => navigate(`/juego/${juegos.id}`)}>
-                            <h3>{juegos.nombre}</h3>
+                            <h3 className='juego-nombre'>{juegos.nombre}</h3>
                             <img src={fotoJuego} alt={juegos.nombre} className="juego-img" />
                             <p className="juego-categoria"><strong>Categoría:</strong> {juegos.categorias}</p>
                             <p className="juego-categoria"><strong>Nota:</strong> {juegos.nota}</p>
