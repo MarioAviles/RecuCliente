@@ -1,6 +1,8 @@
-import { useState } from 'react'
 import './App.css'
 import Cabecera from './componentes/Cabecera/Cabecera'
+import Pie from '../../nintendo/src/componentes/Pie/Pie';
+import LazyLoad from 'react-lazy-load'
+import { Suspense } from 'react';
 
 function App() {
 
@@ -13,14 +15,14 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/juego/:id" element={<Detalle></Detalle>}></Route>
 
-      </Routes>
+      </Routes> */}
 
       <Suspense fallback={"Cargando pie de pagina"}>
         <LazyLoad offset={250}>
           <Pie></Pie>
         </LazyLoad>
       </Suspense>
-      <ScrollUpDown /> */}
+      {/* <ScrollUpDown /> */}
     </>
   )
 }
