@@ -13,14 +13,14 @@ const ListaPerfumes = (props) => {
 
             {props.buscando && <img src={ajaxLoader} />}
 
-            <div className="juegos">
+            <div className="perfumes">
                 {props.perfumes.length > 0 ? (
                     props.perfumes.map((perfumes) => (
-                        <div key={perfumes.id} className="juego" onClick={() => navigate(`/juego/${perfumes.id}`)}>
-                            <h4 className='juego-nombre'>{perfumes.nombre}</h4>
-                            <img src={fotoPerfume} alt={perfumes.nombre} className="juego-img" />
-                            <p className="juego-categoria"><strong>Categoría:</strong> {perfumes.categoria}</p>
-                            <p className="juego-categoria"><strong>Marca:</strong> {perfumes.marca}</p>
+                        <div key={perfumes.id} className="perfume" onClick={() => navigate(`/perfume/${perfumes.id}`)}>
+                            <h4 className='perfume-nombre'>{perfumes.nombre}</h4>
+                            <img src={fotoPerfume} alt={perfumes.nombre} className="perfume-img" />
+                            <p className="perfume-categoria"><strong>Categoría:</strong> {perfumes.categoria}</p>
+                            <p className="perfume-categoria"><strong>Marca:</strong> {perfumes.marca}</p>
                         </div>
                     ))
 

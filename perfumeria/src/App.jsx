@@ -2,6 +2,7 @@ import './App.css'
 import Cabecera from './componentes/Cabecera/Cabecera'
 import Pie from './componentes/Pie/Pie'
 import Home from './paginas/Home/Home'
+import Detalle from './paginas/Detalle/Detalle'
 import LazyLoad from 'react-lazy-load'
 import { Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
@@ -15,7 +16,7 @@ function App() {
       <Routes>
 
         <Route path="/" element={<Home></Home>}></Route>
-        {/* <Route path="/juego/:id" element={<Detalle></Detalle>}></Route> */}
+        <Route path="/perfume/:id" element={<Detalle></Detalle>}></Route>
 
       </Routes>
 

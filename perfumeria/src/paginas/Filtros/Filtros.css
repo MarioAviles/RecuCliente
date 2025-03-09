@@ -1,0 +1,18 @@
+.filtros{
+    text-align: center;
+    margin-top: 20vh;
+    width: 20%;
+    float:left;
+    height: 70vh;
+    border: 3px solid #ffffff;
+    background-color: rgb(116, 116, 116);
+    padding: 15px;
+    h2{
+        font-weight: bold;
+    };
+    img{
+        border: 3px solid #ffffff;
+        border-radius: 5%;
+        width: 90%;
+    }
+}
