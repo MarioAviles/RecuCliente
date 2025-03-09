@@ -3,6 +3,7 @@ import Cabecera from './componentes/Cabecera/Cabecera'
 import Pie from './componentes/Pie/Pie'
 import Home from './paginas/Home/Home'
 import Detalle from './paginas/Detalle/Detalle'
+import ScrollUpDown from './componentes/ScrollUpDown/ScrollUpDown'
 import LazyLoad from 'react-lazy-load'
 import { Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
@@ -25,7 +26,7 @@ function App() {
           <Pie></Pie>
         </LazyLoad>
       </Suspense>
-      {/* <ScrollUpDown /> */}
+      <ScrollUpDown />
     </>
   )
 }
