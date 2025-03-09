@@ -1,0 +1,31 @@
+.home{
+    width: 69%;
+    float:right;
+    margin-top: 10vh;
+    margin-right: 10vh;
+}
+
+.paginacion {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.paginacion button {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+.paginacion button.activo {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.paginacion button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}

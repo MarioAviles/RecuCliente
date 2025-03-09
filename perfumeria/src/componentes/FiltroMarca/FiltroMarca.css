@@ -1,0 +1,19 @@
+.filtroMarca {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.filtroMarca label {
+    font-weight: bold;
+}
+
+.filtroMarca select {
+    padding: 5px;
+    border-radius: 5px;
+}

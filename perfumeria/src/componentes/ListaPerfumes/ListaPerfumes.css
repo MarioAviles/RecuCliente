@@ -7,7 +7,7 @@
 .perfumes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     gap: 20px;
     padding: 20px;
     margin-left: 30px;
