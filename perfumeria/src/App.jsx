@@ -1,6 +1,6 @@
 import './App.css'
 import Cabecera from './componentes/Cabecera/Cabecera'
-import Pie from '../../nintendo/src/componentes/Pie/Pie';
+import Pie from './componentes/Pie/Pie'
 import LazyLoad from 'react-lazy-load'
 import { Suspense } from 'react';
 
