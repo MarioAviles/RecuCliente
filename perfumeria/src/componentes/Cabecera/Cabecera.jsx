@@ -7,7 +7,7 @@ const Cabecera = () => {
         <div>
             <Link to="/" className='cabecera'>
                 <img src={logo} alt="" />
-                <h4>Perfumeria</h4>
+                <h4>Perfumería</h4>
             </Link>
         </div>
     )

@@ -1,8 +1,10 @@
 import './App.css'
 import Cabecera from './componentes/Cabecera/Cabecera'
 import Pie from './componentes/Pie/Pie'
+import Home from './paginas/Home/Home'
 import LazyLoad from 'react-lazy-load'
 import { Suspense } from 'react';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
 
@@ -10,12 +12,12 @@ function App() {
     <>
       <Cabecera></Cabecera>
 
-      {/* <Routes>
+      <Routes>
 
         <Route path="/" element={<Home></Home>}></Route>
-        <Route path="/juego/:id" element={<Detalle></Detalle>}></Route>
+        {/* <Route path="/juego/:id" element={<Detalle></Detalle>}></Route> */}
 
-      </Routes> */}
+      </Routes>
 
       <Suspense fallback={"Cargando pie de pagina"}>
         <LazyLoad offset={250}>
