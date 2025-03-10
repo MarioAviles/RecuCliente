@@ -5,12 +5,15 @@ import Buscador from '../../componentes/Buscador/Buscador';
 import usePerfumes from "../../hooks/usePerfumes"
 import { useState } from "react";
 
+const perfumesPorPagina = 20;
+
 const Home = () => {
 
     const { perfumes, buscando } = usePerfumes();
     const [marcaSeleccionada, setMarcaSeleccionada] = useState("");
     const [keyword, setKeyword] = useState(""); // Texto que el usuario escribe
     const [filtroKeyword, setFiltroKeyword] = useState(""); // Texto que realmente se usa para filtrar
+    
     
     const aplicarBusqueda = () => {
         setFiltroKeyword(keyword); // Actualiza el filtro solo cuando se hace clic en el botón

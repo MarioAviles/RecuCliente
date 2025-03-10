@@ -11,7 +11,7 @@ const Detalle = () => {
     const { perfumes, buscando } = usePerfumes()
     const [perfume, setPerfume] = useState(null);
 
-    // Esperar a que los juegos estén listos antes de buscar el juego
+    // Esperar a que los perfumes estén listos antes de buscar el juego
     useEffect(() => {
         if (perfumes.length > 0) {
             console.log("Buscando juego con ID:", id);
@@ -19,7 +19,7 @@ const Detalle = () => {
             console.log("Perfume encontrado:", perfumeEncontrado);
             setPerfume(perfumeEncontrado);
         }
-    }, [perfumes, id]); // Se ejecuta cuando `juegos` cambia
+    }, [perfumes, id]); // Se ejecuta cuando `perfumes` cambia
 
     return (
         <div className="datos-container">

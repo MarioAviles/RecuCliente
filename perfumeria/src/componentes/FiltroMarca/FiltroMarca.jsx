@@ -3,7 +3,7 @@ import './FiltroMarca.css'
 const FiltroMarca = (props) => {
 
     function obtenerMarcas(perfumes) {
-        const marcasUnicas = [...new Set(perfumes.map(perfume => perfume.marca))];
+        const marcasUnicas = [...new Set(perfumes.map(perfume => perfume.marca))]; //me recoge una única vez todas las marcas
         return marcasUnicas;
     }
 
