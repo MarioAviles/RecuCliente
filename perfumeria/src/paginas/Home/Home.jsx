@@ -14,7 +14,6 @@ const Home = () => {
     
     const aplicarBusqueda = () => {
         setFiltroKeyword(keyword); // Actualiza el filtro solo cuando se hace clic en el botón
-        setPaginaActual(1);
     };
 
     const perfumesFiltradosMarca = perfumes.filter(perfume => 
