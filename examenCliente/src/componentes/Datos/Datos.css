@@ -6,14 +6,13 @@
 .recetas {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
     gap: 20px;
     padding: 20px;
-    margin-left: 35px;
 }
 
 .receta {
-    width: 200px;
+    width: 300px;
     border: 1px solid #ddd;
     padding: 10px;
     border-radius: 8px;
