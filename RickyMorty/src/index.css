@@ -1,0 +1,6 @@
+html, body {
+  overflow-x: hidden; /* Oculta el desplazamiento lateral */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}

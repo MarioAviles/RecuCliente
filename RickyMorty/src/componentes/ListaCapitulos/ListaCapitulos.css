@@ -1,0 +1,48 @@
+.datos-container {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.capitulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 20px;
+    padding: 20px;
+    margin-left: 30px;
+}
+
+.capitulo {
+    width: 100%;
+    border: 3px solid #979797;
+    background-color: white;
+    color: rgb(53, 53, 53);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.capitulo:hover {
+    transform: scale(1.05);
+}
+
+.capitulo-img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.capitulo-fecha {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.capitulo-boton{
+    width: 15%;
+    background-color: rgb(0, 186, 219);
+    color: white;
+    padding: 5px;
+    border: transparent;
+}

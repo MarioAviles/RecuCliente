@@ -1,0 +1,16 @@
+.menu{
+    background-color: rgb(0, 186, 219);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.apartado{
+    background-color: rgb(0, 186, 219);
+    text-decoration: none;
+    color: white
+}
